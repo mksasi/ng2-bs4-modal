@@ -58,6 +58,6 @@
   },
   "peerDependencies": {
     "angular2": "^2.0.0-beta.9",
-    "bootstrap": "~4.0.x"
+    "bootstrap": "^4.0.0-alpha.2"
   }
 }
