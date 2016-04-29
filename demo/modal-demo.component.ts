@@ -1,6 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
-import { MODAL_DIRECTIVES, ModalComponent } from '../src/ng2-bs3-modal/ng2-bs3-modal';
+import { MODAL_DIRECTIVES, ModalComponent } from '../src/ng2-bs4-modal/ng2-bs4-modal';
 
 @Component({
     selector: 'modal-demo-component',

@@ -16,7 +16,7 @@ import { SpyLocation } from '@angular/common/testing';
 import { Component, ComponentResolver, ViewChild, ContentChild, provide, OnDestroy, Input } from '@angular/core';
 import { Location } from '@angular/common';
 import { Router, Routes, ROUTER_DIRECTIVES, RouterOutletMap, RouterUrlSerializer, DefaultRouterUrlSerializer } from '@angular/router';
-import { ModalComponent, MODAL_DIRECTIVES } from '../src/ng2-bs3-modal/ng2-bs3-modal';
+import { ModalComponent, MODAL_DIRECTIVES } from '../src/ng2-bs4-modal/ng2-bs4-modal';
 
 // Needed because ViewChild isn't resolved anymore in the new router
 // https://github.com/angular/angular/issues/4452
