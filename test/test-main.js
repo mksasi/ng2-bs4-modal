@@ -41,5 +41,5 @@ System.import('@angular/core/testing')
                 );
             });
     })
-    .then(function () { return System.import('test/ng2-bs3-modal.spec'); })
+    .then(function () { return System.import('test/ng2-bs4-modal.spec'); })
     .then(function () { __karma__.start(); }, null, function (error) { __karma__.error(error.stack || error); });
