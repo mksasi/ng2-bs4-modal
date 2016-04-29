@@ -1,47 +1,312 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">  
-    <title>Angular2 Bootstrap3 Modal Component</title>
-    <base href="/ng2-bs3-modal/">
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>ng2-bs4-modal by maxfisher05</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>ng2-bs4-modal</h1>
+        <p>Angular2 Bootstrap4 Modal Component</p>
+
+        <p class="view"><a href="https://github.com/maxfisher05/ng2-bs4-modal">View the Project on GitHub <small>maxfisher05/ng2-bs4-modal</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/maxfisher05/ng2-bs4-modal/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/maxfisher05/ng2-bs4-modal/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/maxfisher05/ng2-bs4-modal">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a id="ng2-bs3-modal---" class="anchor" href="#ng2-bs3-modal---" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>ng2-bs3-modal <a href="http://badge.fury.io/js/ng2-bs3-modal"><img src="https://badge.fury.io/js/ng2-bs3-modal.svg" alt="npm version"></a> <a href="https://npmjs.org/ng2-bs3-modal"><img src="https://img.shields.io/npm/dm/ng2-bs3-modal.svg" alt="npm downloads"></a> <a href="https://travis-ci.org/dougludlow/ng2-bs3-modal"><img src="https://travis-ci.org/dougludlow/ng2-bs3-modal.svg?branch=master" alt="Build Status"></a>
+</h1>
+
+<p>Angular2 Bootstrap3 Modal Component</p>
+
+<h2>
+<a id="demo" class="anchor" href="#demo" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Demo</h2>
+
+<p><a href="http://dougludlow.github.io/ng2-bs3-modal/">http://dougludlow.github.io/ng2-bs3-modal/</a></p>
+
+<h2>
+<a id="dependencies" class="anchor" href="#dependencies" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Dependencies</h2>
+
+<p><code>ng2-bs3-modal</code> depends on bootstrap which depends on jquery, you'll need to include both scripts before ng2-bs3-modal:</p>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;
+&lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;</pre></div>
+
+<p>Or, if you're using <a href="https://github.com/systemjs/systemjs">SystemJS</a>, configure it to load them. And import them in your typscript.</p>
+
+<h2>
+<a id="install" class="anchor" href="#install" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Install</h2>
+
+<div class="highlight highlight-source-shell"><pre><span class="pl-k">&gt;</span> npm install --save ng2-bs3-modal</pre></div>
+
+<p>Include a reference to the bundle in your html:</p>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>node_modules/ng2-bs3-modal/bundles/ng2-bs3-modal.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;</pre></div>
+
+<p>Or, if you're using <a href="https://github.com/systemjs/systemjs">SystemJS</a>, add a mapping to your System.config:</p>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-smi">System</span>.<span class="pl-en">config</span>({
+    map<span class="pl-k">:</span> {
+        <span class="pl-s"><span class="pl-pds">'</span>ng2-bs3-modal<span class="pl-pds">'</span></span><span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>node_modules/ng2-bs3-modal<span class="pl-pds">'</span></span>
+    }
+});</pre></div>
+
+<p>Then import and include in your component's directives:</p>
+
+<div class="highlight highlight-source-ts"><pre><span class="pl-k">import</span> { MODAL_DIRECTIVES } <span class="pl-k">from</span> <span class="pl-s">'ng2-bs3-modal/ng2-bs3-modal'</span>;
+
+@Component({
+    directives: [MODAL_DIRECTIVES]
+})
+<span class="pl-k">export</span> <span class="pl-k">class</span> <span class="pl-en">MyComponent</span> {
+    ...    
+}</pre></div>
+
+<p>See examples for <a href="https://github.com/dougludlow/ng2-bs3-modal-demo-npm">npm</a>, <a href="https://github.com/dougludlow/ng2-bs3-modal-demo-systemjs">SystemJS</a>, <a href="https://github.com/dougludlow/ng2-bs3-modal-demo-jspm">jspm</a>, and <a href="https://github.com/dougludlow/ng2-bs3-modal/issues/31">angular-cli</a>.</p>
+
+<h2>
+<a id="api" class="anchor" href="#api" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>API</h2>
+
+<h3>
+<a id="modalcomponent" class="anchor" href="#modalcomponent" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>ModalComponent</h3>
+
+<h4>
+<a id="inputs" class="anchor" href="#inputs" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Inputs</h4>
+
+<ul>
+<li>
+<p><code>animation: boolean</code>, default: <code>true</code></p>
+
+<p>Specify <code>false</code> to simply show the modal rather than having it fade in/out of view.</p>
+</li>
+<li>
+<p><code>backdrop: string | boolean</code>, default: <code>true</code></p>
+
+<p>Specify <code>'static'</code> for a backdrop which doesn't close the modal on click or <code>false</code> for no backdrop.</p>
+</li>
+<li>
+<p><code>keyboard: boolean</code>, default: <code>true</code></p>
+
+<p>Closes the modal when escape key is pressed. Specify <code>false</code> to disable.</p>
+</li>
+<li>
+<p><code>size: string</code>, default: <code>undefined</code></p>
+
+<p>Specify <code>'sm'</code> for small and <code>'lg'</code> for large.</p>
+</li>
+</ul>
+
+<h4>
+<a id="outputs" class="anchor" href="#outputs" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Outputs</h4>
+
+<ul>
+<li>
+<p><code>onClose: EventEmitter</code></p>
+
+<p>Emits when <code>ModalComponent.close()</code> is called. </p>
+</li>
+<li>
+<p><code>onDismiss: EventEmitter</code></p>
+
+<p>Emits when <code>ModalComponent.dismiss()</code> is called, or when the modal is dismissed with the keyboard or backdrop. </p>
+</li>
+<li>
+<p><code>onOpen: EventEmitter</code></p>
+
+<p>Emits when <code>ModalComponent.open()</code> is called.  </p>
+</li>
+</ul>
+
+<h4>
+<a id="methods" class="anchor" href="#methods" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Methods</h4>
+
+<ul>
+<li>
+<p><code>open(size?: string): Promise</code></p>
+
+<p>Opens the modal. Size is optional. Specify <code>'sm'</code> for small and <code>'lg'</code> for large to override size. Returns a promise that resolves when the modal is completely shown.</p>
+</li>
+<li>
+<p><code>close(): Promise</code></p>
+
+<p>Closes the modal. Causes <code>onClose</code> to be emitted. Returns a promise that resolves when the modal is completely hidden.</p>
+</li>
+<li>
+<p><code>dismiss(): Promise</code></p>
+
+<p>Dismisses the modal. Causes <code>onDismiss</code> to be emitted. Returns a promise that resolves when the modal is completely hidden.</p>
+</li>
+</ul>
+
+<h3>
+<a id="modalheadercomponent" class="anchor" href="#modalheadercomponent" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>ModalHeaderComponent</h3>
+
+<h4>
+<a id="inputs-1" class="anchor" href="#inputs-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Inputs</h4>
+
+<ul>
+<li>
+<p><code>show-close: boolean</code>, default: <code>false</code></p>
+
+<p>Show or hide the close button in the header. Specify <code>true</code> to show.</p>
+</li>
+</ul>
+
+<h3>
+<a id="modalfootercomponent" class="anchor" href="#modalfootercomponent" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>ModalFooterComponent</h3>
+
+<h4>
+<a id="inputs-2" class="anchor" href="#inputs-2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Inputs</h4>
+
+<ul>
+<li>
+<p><code>show-default-buttons: boolean</code>, default: <code>false</code></p>
+
+<p>Show or hide the default 'Save' and 'Close' buttons in the header. Specify <code>true</code> to show.</p>
+</li>
+</ul>
+
+<h2>
+<a id="examples" class="anchor" href="#examples" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Examples</h2>
+
+<h3>
+<a id="default-modal" class="anchor" href="#default-modal" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Default modal</h3>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">button</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>button<span class="pl-pds">"</span></span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>btn btn-default<span class="pl-pds">"</span></span> (<span class="pl-e">click</span>)=<span class="pl-s"><span class="pl-pds">"</span>modal.open()<span class="pl-pds">"</span></span>&gt;Open me!&lt;/<span class="pl-ent">button</span>&gt;
+
+&lt;<span class="pl-ent">modal</span> #<span class="pl-e">modal</span>&gt;
+    &lt;<span class="pl-ent">modal</span><span class="pl-e">-header</span> [<span class="pl-e">show-close</span>]=<span class="pl-s"><span class="pl-pds">"</span>true<span class="pl-pds">"</span></span>&gt;
+        &lt;<span class="pl-ent">h4</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>modal-title<span class="pl-pds">"</span></span>&gt;I'm a modal!&lt;/<span class="pl-ent">h4</span>&gt;
+    &lt;/<span class="pl-ent">modal</span><span class="pl-e">-header</span>&gt;
+    &lt;<span class="pl-ent">modal</span><span class="pl-e">-body</span>&gt;
+        Hello World!
+    &lt;/<span class="pl-ent">modal</span><span class="pl-e">-body</span>&gt;
+    &lt;<span class="pl-ent">modal</span><span class="pl-e">-footer</span> [<span class="pl-e">show-default-buttons</span>]=<span class="pl-s"><span class="pl-pds">"</span>true<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">modal</span><span class="pl-e">-footer</span>&gt;
+&lt;/<span class="pl-ent">modal</span>&gt;</pre></div>
+
+<p><img src="demo/images/modal.png" alt="Example"></p>
+
+<h3>
+<a id="static-modal" class="anchor" href="#static-modal" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Static modal</h3>
+
+<p>This will create a modal that cannot be closed with the escape key or by clicking outside of the modal.</p>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">modal</span> #<span class="pl-e">modal</span> [<span class="pl-e">keyboard</span>]=<span class="pl-s"><span class="pl-pds">"</span>false<span class="pl-pds">"</span></span> [<span class="pl-e">backdrop</span>]=<span class="pl-s"><span class="pl-pds">"</span>'static'<span class="pl-pds">"</span></span>&gt;
+    &lt;<span class="pl-ent">modal</span><span class="pl-e">-header</span> [<span class="pl-e">show-close</span>]=<span class="pl-s"><span class="pl-pds">"</span>false<span class="pl-pds">"</span></span>&gt;
+        &lt;<span class="pl-ent">h4</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>modal-title<span class="pl-pds">"</span></span>&gt;I'm a modal!&lt;/<span class="pl-ent">h4</span>&gt;
+    &lt;/<span class="pl-ent">modal</span><span class="pl-e">-header</span>&gt;
+    &lt;<span class="pl-ent">modal</span><span class="pl-e">-body</span>&gt;
+        Hello World!
+    &lt;/<span class="pl-ent">modal</span><span class="pl-e">-body</span>&gt;
+    &lt;<span class="pl-ent">modal</span><span class="pl-e">-footer</span> [<span class="pl-e">show-default-buttons</span>]=<span class="pl-s"><span class="pl-pds">"</span>true<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">modal</span><span class="pl-e">-footer</span>&gt;
+&lt;/<span class="pl-ent">modal</span>&gt;</pre></div>
+
+<h3>
+<a id="use-custom-buttons-in-footer" class="anchor" href="#use-custom-buttons-in-footer" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Use custom buttons in footer</h3>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">modal</span> #<span class="pl-e">modal</span>&gt;
+    &lt;<span class="pl-ent">modal</span><span class="pl-e">-header</span>&gt;
+        &lt;<span class="pl-ent">h4</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>modal-title<span class="pl-pds">"</span></span>&gt;I'm a modal!&lt;/<span class="pl-ent">h4</span>&gt;
+    &lt;/<span class="pl-ent">modal</span><span class="pl-e">-header</span>&gt;
+    &lt;<span class="pl-ent">modal</span><span class="pl-e">-body</span>&gt;
+        Hello World!
+    &lt;/<span class="pl-ent">modal</span><span class="pl-e">-body</span>&gt;
+    &lt;<span class="pl-ent">modal</span><span class="pl-e">-footer</span>&gt;
+        &lt;<span class="pl-ent">button</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>button<span class="pl-pds">"</span></span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>btn btn-default<span class="pl-pds">"</span></span> <span class="pl-e">data-dismiss</span>=<span class="pl-s"><span class="pl-pds">"</span>modal<span class="pl-pds">"</span></span> (<span class="pl-e">click</span>)=<span class="pl-s"><span class="pl-pds">"</span>modal.dismiss()<span class="pl-pds">"</span></span>&gt;Cancel&lt;/<span class="pl-ent">button</span>&gt;
+        &lt;<span class="pl-ent">button</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>button<span class="pl-pds">"</span></span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>btn btn-primary<span class="pl-pds">"</span></span> (<span class="pl-e">click</span>)=<span class="pl-s"><span class="pl-pds">"</span>modal.close()<span class="pl-pds">"</span></span>&gt;Ok&lt;/<span class="pl-ent">button</span>&gt;
+    &lt;/<span class="pl-ent">modal</span><span class="pl-e">-footer</span>&gt;
+&lt;/<span class="pl-ent">modal</span>&gt;</pre></div>
+
+<p><img src="demo/images/modal-custom-footer.png" alt="Example"></p>
+
+<h3>
+<a id="opening-and-closing-the-modal-from-the-hostparent-component" class="anchor" href="#opening-and-closing-the-modal-from-the-hostparent-component" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Opening and closing the modal from the host/parent component</h3>
+
+<div class="highlight highlight-source-ts"><pre><span class="pl-k">import</span> { Component, ViewChild } <span class="pl-k">from</span> <span class="pl-s">'angular/core'</span>;
+<span class="pl-k">import</span> { MODAL_DIRECTIVES, ModalComponent } <span class="pl-k">from</span> <span class="pl-s">'ng2-bs3-modal/ng2-bs3-modal'</span>;
+
+@Component({
+    selector: <span class="pl-s">'parent-component'</span>,
+    directives: [MODAL_DIRECTIVES],
+    template: <span class="pl-s">`</span>
+<span class="pl-s">        &lt;modal #myModal&gt;</span>
+<span class="pl-s">            ...</span>
+<span class="pl-s">        &lt;/modal&gt;</span>
+<span class="pl-s">    `</span>
+})
+<span class="pl-k">export</span> <span class="pl-k">class</span> <span class="pl-en">ParentComponent</span> {
+    @<span class="pl-en">ViewChild</span>('<span class="pl-v">myModal</span>')
+    modal: ModalComponent;
+
+    <span class="pl-en">close</span>() {
+        <span class="pl-c1">this</span>.modal.close();
+    }
+
+    <span class="pl-en">open</span>() {
+        <span class="pl-c1">this</span>.modal.open();
+    }
+}</pre></div>
+
+<h3>
+<a id="autofocus-on-a-textbox-when-modal-is-opened" class="anchor" href="#autofocus-on-a-textbox-when-modal-is-opened" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Autofocus on a textbox when modal is opened</h3>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">modal</span> #<span class="pl-e">modal</span>&gt;
+    &lt;<span class="pl-ent">modal</span><span class="pl-e">-header</span>&gt;
+        &lt;<span class="pl-ent">h4</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>modal-title<span class="pl-pds">"</span></span>&gt;I'm a modal!&lt;/<span class="pl-ent">h4</span>&gt;
+    &lt;/<span class="pl-ent">modal</span><span class="pl-e">-header</span>&gt;
+    &lt;<span class="pl-ent">modal</span><span class="pl-e">-body</span>&gt;
+        &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>form-group<span class="pl-pds">"</span></span>&gt;
+            &lt;<span class="pl-ent">label</span> <span class="pl-e">for</span>=<span class="pl-s"><span class="pl-pds">"</span>textbox<span class="pl-pds">"</span></span>&gt;I'm a textbox!&lt;/<span class="pl-ent">label</span>&gt;
+            &lt;<span class="pl-ent">input</span> <span class="pl-e">autofocus</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text<span class="pl-pds">"</span></span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>form-control<span class="pl-pds">"</span></span> <span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>textbox<span class="pl-pds">"</span></span>&gt;
+        &lt;/<span class="pl-ent">div</span>&gt;        
+    &lt;/<span class="pl-ent">modal</span><span class="pl-e">-body</span>&gt;
+    &lt;<span class="pl-ent">modal</span><span class="pl-e">-footer</span> [<span class="pl-e">show-default-buttons</span>]=<span class="pl-s"><span class="pl-pds">"</span>true<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">modal</span><span class="pl-e">-footer</span>&gt;
+&lt;/<span class="pl-ent">modal</span>&gt;</pre></div>
+
+<h2>
+<a id="building" class="anchor" href="#building" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Building</h2>
+
+<div class="highlight highlight-source-shell"><pre>git clone https://github.com/dougludlow/ng2-bs3-modal.git
+npm install
+npm run build</pre></div>
+
+<h2>
+<a id="testing" class="anchor" href="#testing" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Testing</h2>
+
+<div class="highlight highlight-source-shell"><pre>npm <span class="pl-c1">test</span></pre></div>
+
+<p>To tell karma to watch for changes:</p>
+
+<div class="highlight highlight-source-shell"><pre>npm run test-watch</pre></div>
+
+<h2>
+<a id="bugscontributions" class="anchor" href="#bugscontributions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Bugs/Contributions</h2>
+
+<p>Report all bugs and feature requests on the <a href="https://github.com/dougludlow/ng2-bs3-modal/issues">issue tracker</a>.</p>
+
+<p>Contributions are welcome! Feel free to open a <a href="https://github.com/dougludlow/ng2-bs3-modal/pulls">pull request</a>. </p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/maxfisher05">maxfisher05</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.css">
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/es6-shim/0.33.3/es6-shim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.16/system-polyfills.js"></script>
-    
-    <script src="https://code.angularjs.org/2.0.0-beta.15/angular2-polyfills.js"></script>
-    <script src="https://code.angularjs.org/tools/system.js"></script>
-    <script src="https://code.angularjs.org/tools/typescript.js"></script>
-    <script src="https://code.angularjs.org/2.0.0-beta.15/Rx.js"></script>
-    <script src="https://code.angularjs.org/2.0.0-beta.15/angular2.dev.js"></script>
-    <script src="https://code.angularjs.org/2.0.0-beta.15/router.dev.js"></script>
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.js"></script>
-    
-    <script>
-      System.config({
-        baseURL: '/ng2-bs3-modal/',
-        transpiler: 'typescript', 
-        typescriptOptions: {
-            emitDecoratorMetadata: true,
-            experimentalDecorators: true
-        }, 
-        packages: {
-            'demo': {defaultExtension: 'ts'},
-            'src': {defaultExtension: 'ts'}
-        }
-      });
-      System.import('demo/main').then(null, console.error.bind(console));
-    </script>
-</head>
-<body>
-    
-    <a href="https://github.com/dougludlow/ng2-bs3-modal"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>
-    
-    <modal-demo></modal-demo>
-    
-</body>
+  </body>
 </html>
