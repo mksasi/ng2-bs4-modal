@@ -1,16 +1,16 @@
-# ng2-bs3-modal [![npm version](https://badge.fury.io/js/ng2-bs3-modal.svg)](http://badge.fury.io/js/ng2-bs3-modal) [![npm downloads](https://img.shields.io/npm/dm/ng2-bs3-modal.svg)](https://npmjs.org/ng2-bs3-modal) [![Build Status](https://travis-ci.org/dougludlow/ng2-bs3-modal.svg?branch=master)](https://travis-ci.org/dougludlow/ng2-bs3-modal)
-Angular2 Bootstrap3 Modal Component
+# ng2-bs4-modal [![npm version](https://badge.fury.io/js/ng2-bs3-modal.svg)](http://badge.fury.io/js/ng2-bs3-modal) [![npm downloads](https://img.shields.io/npm/dm/ng2-bs3-modal.svg)](https://npmjs.org/ng2-bs3-modal) [![Build Status](https://travis-ci.org/dougludlow/ng2-bs3-modal.svg?branch=master)](https://travis-ci.org/dougludlow/ng2-bs3-modal)
+Angular2 Bootstrap4 Modal Component
 
 ## Demo
-http://dougludlow.github.io/ng2-bs3-modal/
+http://maxfisher05.github.io/ng2-bs4-modal/
 
 ## Dependencies
 
-`ng2-bs3-modal` depends on bootstrap which depends on jquery, you'll need to include both scripts before ng2-bs3-modal:
+`ng2-bs4-modal` depends on bootstrap which depends on jquery, you'll need to include both scripts before ng2-bs4-modal:
 
 ```html
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.js"></script>
+<script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
 ```  
 
 Or, if you're using [SystemJS](https://github.com/systemjs/systemjs), configure it to load them. And import them in your typscript.
@@ -18,13 +18,13 @@ Or, if you're using [SystemJS](https://github.com/systemjs/systemjs), configure 
 ## Install
 
 ```bash
-> npm install --save ng2-bs3-modal
+> npm install --save ng2-bs4-modal
 ```
     
 Include a reference to the bundle in your html:
 
 ```html
-<script src="node_modules/ng2-bs3-modal/bundles/ng2-bs3-modal.js"></script>
+<script src="node_modules/ng2-bs4-modal/bundles/ng2-bs4-modal.js"></script>
 ```
     
 Or, if you're using [SystemJS](https://github.com/systemjs/systemjs), add a mapping to your System.config:
@@ -32,7 +32,7 @@ Or, if you're using [SystemJS](https://github.com/systemjs/systemjs), add a mapp
 ```javascript
 System.config({
     map: {
-        'ng2-bs3-modal': 'node_modules/ng2-bs3-modal'
+        'ng2-bs4-modal': 'node_modules/ng2-bs4-modal'
     }
 });
 ```
@@ -40,7 +40,7 @@ System.config({
 Then import and include in your component's directives:
 
 ```typescript
-import { MODAL_DIRECTIVES } from 'ng2-bs3-modal/ng2-bs3-modal';
+import { MODAL_DIRECTIVES } from 'ng2-bs4-modal/ng2-bs4-modal';
 
 @Component({
     directives: [MODAL_DIRECTIVES]
@@ -177,7 +177,7 @@ This will create a modal that cannot be closed with the escape key or by clickin
 
 ```typescript
 import { Component, ViewChild } from 'angular/core';
-import { MODAL_DIRECTIVES, ModalComponent } from 'ng2-bs3-modal/ng2-bs3-modal';
+import { MODAL_DIRECTIVES, ModalComponent } from 'ng2-bs4-modal/ng2-bs4-modal';
 
 @Component({
     selector: 'parent-component',
@@ -222,7 +222,7 @@ export class ParentComponent {
 ## Building
 
 ```bash
-git clone https://github.com/dougludlow/ng2-bs3-modal.git
+git clone https://github.com/maxfisher05/ng2-bs4-modal.git
 npm install
 npm run build
 ```
