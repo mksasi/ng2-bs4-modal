@@ -1,6 +1,6 @@
 {
   "name": "ng2-bs4-modal",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Angular2 Boostrap4 Modal Component",
   "main": "ng2-bs4-modal.js",
   "scripts": {
@@ -67,6 +67,6 @@
     "@angular/core": "^2.0.0-rc.1",
     "@angular/platform-browser": "^2.0.0-rc.1",
     "@angular/platform-browser-dynamic": "^2.0.0-rc.1",
-    "bootstrap": "~4.0.x"
+    "bootstrap": "^4.0.0-alpha.2"
   }
 }
