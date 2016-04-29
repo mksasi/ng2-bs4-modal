@@ -29,46 +29,46 @@
       </header>
       <section>
         <h1>
-<a id="ng2-bs3-modal---" class="anchor" href="#ng2-bs3-modal---" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>ng2-bs3-modal <a href="http://badge.fury.io/js/ng2-bs3-modal"><img src="https://badge.fury.io/js/ng2-bs3-modal.svg" alt="npm version"></a> <a href="https://npmjs.org/ng2-bs3-modal"><img src="https://img.shields.io/npm/dm/ng2-bs3-modal.svg" alt="npm downloads"></a> <a href="https://travis-ci.org/dougludlow/ng2-bs3-modal"><img src="https://travis-ci.org/dougludlow/ng2-bs3-modal.svg?branch=master" alt="Build Status"></a>
+<a id="ng2-bs4-modal---" class="anchor" href="#ng2-bs4-modal---" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>ng2-bs4-modal <a href="http://badge.fury.io/js/ng2-bs3-modal"><img src="https://badge.fury.io/js/ng2-bs3-modal.svg" alt="npm version"></a> <a href="https://npmjs.org/ng2-bs3-modal"><img src="https://img.shields.io/npm/dm/ng2-bs3-modal.svg" alt="npm downloads"></a> <a href="https://travis-ci.org/dougludlow/ng2-bs3-modal"><img src="https://travis-ci.org/dougludlow/ng2-bs3-modal.svg?branch=master" alt="Build Status"></a>
 </h1>
 
-<p>Angular2 Bootstrap3 Modal Component</p>
+<p>Angular2 Bootstrap4 Modal Component</p>
 
 <h2>
 <a id="demo" class="anchor" href="#demo" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Demo</h2>
 
-<p><a href="http://dougludlow.github.io/ng2-bs3-modal/">http://dougludlow.github.io/ng2-bs3-modal/</a></p>
+<p><a href="http://maxfisher05.github.io/ng2-bs4-modal/">http://maxfisher05.github.io/ng2-bs4-modal/</a></p>
 
 <h2>
 <a id="dependencies" class="anchor" href="#dependencies" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Dependencies</h2>
 
-<p><code>ng2-bs3-modal</code> depends on bootstrap which depends on jquery, you'll need to include both scripts before ng2-bs3-modal:</p>
+<p><code>ng2-bs4-modal</code> depends on bootstrap which depends on jquery, you'll need to include both scripts before ng2-bs4-modal:</p>
 
 <div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;
-&lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;</pre></div>
+&lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;</pre></div>
 
 <p>Or, if you're using <a href="https://github.com/systemjs/systemjs">SystemJS</a>, configure it to load them. And import them in your typscript.</p>
 
 <h2>
 <a id="install" class="anchor" href="#install" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Install</h2>
 
-<div class="highlight highlight-source-shell"><pre><span class="pl-k">&gt;</span> npm install --save ng2-bs3-modal</pre></div>
+<div class="highlight highlight-source-shell"><pre><span class="pl-k">&gt;</span> npm install --save ng2-bs4-modal</pre></div>
 
 <p>Include a reference to the bundle in your html:</p>
 
-<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>node_modules/ng2-bs3-modal/bundles/ng2-bs3-modal.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;</pre></div>
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>node_modules/ng2-bs4-modal/bundles/ng2-bs4-modal.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;</pre></div>
 
 <p>Or, if you're using <a href="https://github.com/systemjs/systemjs">SystemJS</a>, add a mapping to your System.config:</p>
 
 <div class="highlight highlight-source-js"><pre><span class="pl-smi">System</span>.<span class="pl-en">config</span>({
     map<span class="pl-k">:</span> {
-        <span class="pl-s"><span class="pl-pds">'</span>ng2-bs3-modal<span class="pl-pds">'</span></span><span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>node_modules/ng2-bs3-modal<span class="pl-pds">'</span></span>
+        <span class="pl-s"><span class="pl-pds">'</span>ng2-bs4-modal<span class="pl-pds">'</span></span><span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>node_modules/ng2-bs4-modal<span class="pl-pds">'</span></span>
     }
 });</pre></div>
 
 <p>Then import and include in your component's directives:</p>
 
-<div class="highlight highlight-source-ts"><pre><span class="pl-k">import</span> { MODAL_DIRECTIVES } <span class="pl-k">from</span> <span class="pl-s">'ng2-bs3-modal/ng2-bs3-modal'</span>;
+<div class="highlight highlight-source-ts"><pre><span class="pl-k">import</span> { MODAL_DIRECTIVES } <span class="pl-k">from</span> <span class="pl-s">'ng2-bs4-modal/ng2-bs4-modal'</span>;
 
 @Component({
     directives: [MODAL_DIRECTIVES]
@@ -238,7 +238,7 @@
 <a id="opening-and-closing-the-modal-from-the-hostparent-component" class="anchor" href="#opening-and-closing-the-modal-from-the-hostparent-component" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Opening and closing the modal from the host/parent component</h3>
 
 <div class="highlight highlight-source-ts"><pre><span class="pl-k">import</span> { Component, ViewChild } <span class="pl-k">from</span> <span class="pl-s">'angular/core'</span>;
-<span class="pl-k">import</span> { MODAL_DIRECTIVES, ModalComponent } <span class="pl-k">from</span> <span class="pl-s">'ng2-bs3-modal/ng2-bs3-modal'</span>;
+<span class="pl-k">import</span> { MODAL_DIRECTIVES, ModalComponent } <span class="pl-k">from</span> <span class="pl-s">'ng2-bs4-modal/ng2-bs4-modal'</span>;
 
 @Component({
     selector: <span class="pl-s">'parent-component'</span>,
@@ -281,7 +281,7 @@
 <h2>
 <a id="building" class="anchor" href="#building" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Building</h2>
 
-<div class="highlight highlight-source-shell"><pre>git clone https://github.com/dougludlow/ng2-bs3-modal.git
+<div class="highlight highlight-source-shell"><pre>git clone https://github.com/maxfisher05/ng2-bs4-modal.git
 npm install
 npm run build</pre></div>
 
