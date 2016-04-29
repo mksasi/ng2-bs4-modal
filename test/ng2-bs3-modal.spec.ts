@@ -14,12 +14,10 @@ import {
 import { DirectiveResolver } from 'angular2/src/core/linker/directive_resolver';
 import { SpyLocation } from 'angular2/src/mock/location_mock';
 import { TEST_BROWSER_PLATFORM_PROVIDERS, TEST_BROWSER_APPLICATION_PROVIDERS } from 'angular2/platform/testing/browser';
-import { MockApplicationRef } from 'angular2/src/mock/mock_application_ref';
-import { DynamicComponentLoader } from 'angular2/src/core/linker/dynamic_component_loader';
-import { Component, ViewChild, ApplicationRef, provide, OnDestroy, Input } from 'angular2/core';
+import { Component, ViewChild, provide, Input } from 'angular2/core';
 import { Router, RouteConfig, ROUTER_DIRECTIVES, ROUTER_PRIMARY_COMPONENT, RouteRegistry, Location } from 'angular2/router';
 import { RootRouter } from 'angular2/src/router/router';
-import { ModalComponent, MODAL_DIRECTIVES } from '../src/ng2-bs3-modal/ng2-bs3-modal';
+import { ModalComponent, MODAL_DIRECTIVES } from '../src/ng2-bs4-modal/ng2-bs4-modal';
 
 describe('ModalComponent', () => {
 

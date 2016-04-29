@@ -1,16 +1,16 @@
 {
-  "name": "ng2-bs3-modal",
-  "version": "0.5.3",
-  "description": "Angular2 Boostrap3 Modal Component",
-  "main": "ng2-bs3-modal.js",
+  "name": "ng2-bs4-modal",
+  "version": "0.0.1",
+  "description": "Angular2 Boostrap4 Modal Component",
+  "main": "ng2-bs4-modal.js",
   "scripts": {
     "peer": "npm install es6-promise@^3.0.2 es6-shim@^0.33.3 reflect-metadata@0.1.2 rxjs@5.0.0-beta.0 zone.js@0.5.14",
     "lint": "node ./node_modules/.bin/tslint ./src/**/*.ts",
-    "clean": "node ./node_modules/.bin/rimraf ./bundles/ ./components/ ./directives/ ./ng2-bs3-modal.js ./ng2-bs3-modal.d.ts",
+    "clean": "node ./node_modules/.bin/rimraf ./bundles/ ./components/ ./directives/ ./ng2-bs4-modal.js ./ng2-bs4-modal.d.ts",
     "tsc": "node ./node_modules/.bin/tsc --project . --declaration",
     "tsc-test": "node ./node_modules/.bin/tsc --project ./test",
-    "tsc-single": "node ./node_modules/.bin/tsc --project . --rootDir ./src --module system --outFile ./bundles/ng2-bs3-modal.js",
-    "uglify": "node ./node_modules/.bin/uglifyjs ./bundles/ng2-bs3-modal.js --output ./bundles/ng2-bs3-modal.min.js",
+    "tsc-single": "node ./node_modules/.bin/tsc --project . --rootDir ./src --module system --outFile ./bundles/ng2-bs4-modal.js",
+    "uglify": "node ./node_modules/.bin/uglifyjs ./bundles/ng2-bs4-modal.js --output ./bundles/ng2-bs4-modal.min.js",
     "bundles": "npm run tsc-single && npm run uglify",
     "build": "npm run clean && npm run typings && npm run lint && npm run tsc && npm run bundles",
     "prepublish": "npm run build",
@@ -20,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/dougludlow/ng2-bs3-modal.git"
+    "url": "git+ssh://git@github.com/maxfisher05/ng2-bs4-modal.git"
   },
   "keywords": [
     "angular2",
@@ -58,6 +58,6 @@
   },
   "peerDependencies": {
     "angular2": "^2.0.0-beta.9",
-    "bootstrap": "~3.3.x"
+    "bootstrap": "~4.0.x"
   }
 }

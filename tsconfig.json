@@ -9,7 +9,7 @@
         "inlineSourceMap": true,
         "declaration": false,
         "outDir": ".",
-        "rootDir": "src/ng2-bs3-modal"
+        "rootDir": "src/ng2-bs4-modal"
     },
     "exclude": [
         "typings/main.d.ts",

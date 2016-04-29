@@ -16,5 +16,5 @@ System.config({
 
 System.import('angular2/src/platform/browser/browser_adapter')
     .then(function(browser_adapter) { browser_adapter.BrowserDomAdapter.makeCurrent(); })
-    .then(function() { return System.import('base/test/ng2-bs3-modal.spec'); })
+    .then(function() { return System.import('base/test/ng2-bs4-modal.spec'); })
     .then(function() { __karma__.start(); }, null, function(error) { __karma__.error(error.stack || error); });
