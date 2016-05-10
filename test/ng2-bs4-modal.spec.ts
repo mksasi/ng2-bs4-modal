@@ -1,19 +1,15 @@
 import {
     beforeEach,
     afterEach,
-    ddescribe,
-    xdescribe,
     describe,
     expect,
-    iit,
     inject,
     beforeEachProviders,
     it,
-    xit
 } from '@angular/core/testing';
 import { ComponentFixture, TestComponentBuilder } from '@angular/compiler/testing';
 import { SpyLocation } from '@angular/common/testing';
-import { Component, ComponentResolver, ViewChild, ContentChild, provide, OnDestroy, Input } from '@angular/core';
+import { Component, ComponentResolver, ViewChild, provide, Input } from '@angular/core';
 import { Location } from '@angular/common';
 import { Router, Routes, ROUTER_DIRECTIVES, RouterOutletMap, RouterUrlSerializer, DefaultRouterUrlSerializer } from '@angular/router';
 import { ModalComponent, MODAL_DIRECTIVES } from '../src/ng2-bs4-modal/ng2-bs4-modal';
