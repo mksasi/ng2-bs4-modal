@@ -6,7 +6,7 @@
         "experimentalDecorators": true
     },
     "files": [
-        "ng2-bs3-modal.spec.ts",
+        "ng2-bs4-modal.spec.ts",
         "../typings/broswer.d.ts"
     ]
 }
