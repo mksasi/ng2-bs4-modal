@@ -27,6 +27,7 @@
         <button type="button" class="btn btn-default" (click)="open()">Open from parent component</button>
         <button type="button" class="btn btn-default" (click)="parentModal.open()">Nested modals</button>
         <button type="button" class="btn btn-default" (click)="validationModal.open()">With form validation</button>
+        <button type="button" class="btn btn-default" (click)="styleModal.open()">With header style</button>
     </p>
     <br />
 
@@ -97,6 +98,18 @@
                 <button type="button" class="btn btn-default" data-dismiss="modal" (click)="validationModal.dismiss()">Cancel</button>
                 <button type="button" class="btn btn-primary" [disabled]="!modalForm.valid" (click)="validationModal.close()">Save</button>
             </modal-footer>
+        </form>
+    </modal>
+
+    <modal (onClose)="closed()" (onDismiss)="dismissed()" (onOpen)="opened()" #styleModal>
+        <form #modalForm="ngForm">
+            <modal-header [show-close]="true" [header-classes]="{'header-style':true}">
+                <h4 class="modal-title">I'm a modal with style!</h4>
+            </modal-header>
+            <modal-body>
+                <p>such header style</p>
+            </modal-body>
+            <modal-footer [show-default-buttons]="true"></modal-footer>
         </form>
     </modal>
 </section>
