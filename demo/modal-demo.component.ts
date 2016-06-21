@@ -1,4 +1,4 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component, ViewChild, ViewEncapsulation } from '@angular/core';
 import { Router } from '@angular/router';
 import { MODAL_DIRECTIVES, ModalComponent } from '../src/ng2-bs4-modal/ng2-bs4-modal';
 
@@ -12,8 +12,13 @@ import { MODAL_DIRECTIVES, ModalComponent } from '../src/ng2-bs4-modal/ng2-bs4-m
         }`,
         `.ng-invalid {
             border-left: 5px solid #d9534f; /* red */
+        }`,
+        `.header-style {
+            color: #fff;
+            background-color: #128477;
         }`
-    ]
+    ],
+    encapsulation: ViewEncapsulation.None
 })
 export class ModalDemoComponent {
 
