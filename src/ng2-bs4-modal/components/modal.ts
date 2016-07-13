@@ -1,5 +1,4 @@
 import { Component, OnDestroy, Input, Output, EventEmitter, ElementRef, HostBinding } from '@angular/core';
-import { CanDeactivate } from '@angular/router';
 import { ModalInstance, ModalResult } from './modal-instance';
 
 @Component({
@@ -17,7 +16,7 @@ import { ModalInstance, ModalResult } from './modal-instance';
         </div>
     `
 })
-export class ModalComponent implements OnDestroy, CanDeactivate {
+export class ModalComponent implements OnDestroy {
 
     private overrideSize: string = null;
 
@@ -53,10 +52,6 @@ export class ModalComponent implements OnDestroy, CanDeactivate {
 
     ngOnDestroy() {
         return this.instance && this.instance.destroy();
-    }
-
-    routerCanDeactivate(): any {
-        return this.ngOnDestroy();
     }
 
     open(size?: string): Promise<void> {
