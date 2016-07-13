@@ -1,6 +1,6 @@
 {
   "name": "ng2-bs4-modal",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Angular2 Boostrap4 Modal Component",
   "main": "ng2-bs4-modal.js",
   "scripts": {
