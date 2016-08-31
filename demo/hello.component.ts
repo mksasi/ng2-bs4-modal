@@ -1,9 +1,7 @@
-import { Component } from '@angular/core';
-import { ROUTER_DIRECTIVES } from '@angular/router';
+import {Component} from '@angular/core';
 
 @Component({
     selector: 'hello-component',
-    directives: [ROUTER_DIRECTIVES],
     template: `
         <section class="container">
             <h1>Hello</h1>
@@ -11,4 +9,5 @@ import { ROUTER_DIRECTIVES } from '@angular/router';
         </section>
     `
 })
-export class HelloComponent { }
+export class HelloComponent {
+}
