@@ -41,7 +41,7 @@ System.config({
 Then import into your application or component's module:
 
 ```typescript
-import {ModalModule} from '../src/ng2-bs4-modal/ng2-bs4-modal';
+import {ModalModule} from 'ng2-bs4-modal/ng2-bs4-modal';
 
 @NgModule({
     imports: [
