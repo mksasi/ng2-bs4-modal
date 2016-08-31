@@ -38,16 +38,19 @@ System.config({
 });
 ```
 
-Then import and include in your component's directives:
+Then import into your application or component's module:
 
 ```typescript
-import { MODAL_DIRECTIVES } from 'ng2-bs4-modal/ng2-bs4-modal';
+import {ModalModule} from '../src/ng2-bs4-modal/ng2-bs4-modal';
 
-@Component({
-    directives: [MODAL_DIRECTIVES]
+@NgModule({
+    imports: [
+        ...
+        ModalModule,
+    ]
+    ...
 })
-export class MyComponent {
-    ...    
+export class AppModule {
 }
 ```
 
@@ -178,11 +181,10 @@ This will create a modal that cannot be closed with the escape key or by clickin
 
 ```typescript
 import { Component, ViewChild } from 'angular/core';
-import { MODAL_DIRECTIVES, ModalComponent } from 'ng2-bs4-modal/ng2-bs4-modal';
+import { ModalComponent } from 'ng2-bs4-modal/ng2-bs4-modal';
 
 @Component({
     selector: 'parent-component',
-    directives: [MODAL_DIRECTIVES],
     template: `
         <modal #myModal>
             ...

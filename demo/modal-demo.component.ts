@@ -1,11 +1,10 @@
-import { Component, ViewChild, ViewEncapsulation } from '@angular/core';
-import { Router } from '@angular/router';
-import { MODAL_DIRECTIVES, ModalComponent } from '../src/ng2-bs4-modal/ng2-bs4-modal';
+import {Component, ViewChild, ViewEncapsulation} from '@angular/core';
+import {Router} from '@angular/router';
+import {ModalComponent} from '../src/ng2-bs4-modal/ng2-bs4-modal';
 
 @Component({
     selector: 'modal-demo-component',
     templateUrl: 'demo/modal-demo.component.html',
-    directives: [MODAL_DIRECTIVES],
     styles: [
         `.ng-valid[required] {
             border-left: 5px solid #5cb85c; /* green */
@@ -36,7 +35,8 @@ export class ModalDemoComponent {
     keyboard: boolean = true;
     backdrop: string | boolean = true;
 
-    constructor(private router: Router) { }
+    constructor(private router: Router) {
+    }
 
     closed() {
         this.output = '(closed) ' + this.selected;
