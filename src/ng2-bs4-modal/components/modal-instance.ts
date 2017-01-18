@@ -71,7 +71,7 @@ export class ModalInstance {
 
         this.hidden = Observable.fromEvent(this.$modal, this.hiddenEventName)
             .map(() => {
-                let result = (!this.result || this.result === ModalResult.None)
+                let result = (!this.result || this.result.valueOf() === ModalResult.None.valueOf())
                     ? ModalResult.Dismiss : this.result;
 
                 this.result = ModalResult.None;

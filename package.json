@@ -1,6 +1,6 @@
 {
   "name": "ng2-bs4-modal",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "Angular2 Boostrap4 Modal Component",
   "main": "ng2-bs4-modal.js",
   "scripts": {
@@ -42,7 +42,7 @@
     "@angular/platform-browser": "2.0.2",
     "@angular/platform-browser-dynamic": "2.0.2",
     "@angular/router": "3.0.2",
-    "bootstrap": "4.0.0-alpha.4",
+    "bootstrap": "4.0.0-alpha.6",
     "es6-shim": "^0.35.0",
     "jasmine": "^2.4.1",
     "jquery": "^2.2.1",
@@ -70,6 +70,6 @@
     "@angular/core": "^2.x",
     "@angular/platform-browser": "^2.x",
     "@angular/platform-browser-dynamic": "^2.x",
-    "bootstrap": "^4.0.0-alpha.4"
+    "bootstrap": "^4.0.0-alpha.6"
   }
 }
