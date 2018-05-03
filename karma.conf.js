@@ -17,7 +17,7 @@ module.exports = function (config) {
             'node_modules/zone.js/dist/zone.js',
             'node_modules/reflect-metadata/Reflect.js',
             'node_modules/jquery/dist/jquery.js',
-            'node_modules/tether/dist/js/tether.js',
+            'node_modules/popper.js/dist/js/popper.js',
             'node_modules/bootstrap/dist/js/bootstrap.js',
             'test/test-main.js',
             { pattern: 'node_modules/@angular/**/*.js', included: false, served: true },

@@ -1,33 +1,33 @@
 <section class="container">
-    <h1>Angular2 Bootstrap4 Modal</h1>
+    <h1>Angular Bootstrap4 Modal</h1>
     <hr>
 
     <h2>Configuration</h2>
     <hr>
     <p>
-        <button type="button" class="btn btn-secondary" (click)="animation = !animation">Toggle Animation ({{ animation }})</button>
-        <button type="button" class="btn btn-secondary" (click)="keyboard = !keyboard">Toggle Keyboard ({{ keyboard }})</button>
-        <button type="button" class="btn btn-secondary" (click)="index = index + 1; backdrop = backdropOptions[index%3]">Toggle Backdrop ({{ backdrop }})</button>
+        <button type="button" class="btn btn-light" (click)="animation = !animation">Toggle Animation ({{ animation }})</button>
+        <button type="button" class="btn btn-light" (click)="keyboard = !keyboard">Toggle Keyboard ({{ keyboard }})</button>
+        <button type="button" class="btn btn-light" (click)="index = index + 1; backdrop = backdropOptions[index%3]">Toggle Backdrop ({{ backdrop }})</button>
     </p>
     <br />
 
     <h2>Common Usage</h2>
     <hr>
     <p>
-        <button type="button" class="btn btn-secondary" (click)="modal.open()">Open me!</button>
-        <button type="button" class="btn btn-secondary" (click)="modal.open('lg')">Large modal</button>
-        <button type="button" class="btn btn-secondary" (click)="modal.open('sm')">Small modal</button>
+        <button type="button" class="btn btn-light" (click)="modal.open()">Open me!</button>
+        <button type="button" class="btn btn-light" (click)="modal.open('lg')">Large modal</button>
+        <button type="button" class="btn btn-light" (click)="modal.open('sm')">Small modal</button>
     </p>
     <br />
 
     <h2>Other Usages</h2>
     <hr>
     <p>
-        <button type="button" class="btn btn-secondary" (click)="navigateModal.open()">Navigate in modal</button>
-        <button type="button" class="btn btn-secondary" (click)="open()">Open from parent component</button>
-        <button type="button" class="btn btn-secondary" (click)="parentModal.open()">Nested modals</button>
-        <button type="button" class="btn btn-secondary" (click)="validationModal.open()">With form validation</button>
-        <button type="button" class="btn btn-secondary" (click)="styleModal.open()">With header style</button>
+        <button type="button" class="btn btn-light" (click)="navigateModal.open()">Navigate in modal</button>
+        <button type="button" class="btn btn-light" (click)="open()">Open from parent component</button>
+        <button type="button" class="btn btn-light" (click)="parentModal.open()">Nested modals</button>
+        <button type="button" class="btn btn-light" (click)="validationModal.open()">With form validation</button>
+        <button type="button" class="btn btn-light" (click)="styleModal.open()">With header style</button>
     </p>
     <br />
 
@@ -58,7 +58,7 @@
             <p>I will navigate to another route when you close the modal.</p>
         </modal-body>
         <modal-footer>
-            <button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="navigateModal.dismiss()">Close</button>
+            <button type="button" class="btn btn-light" data-dismiss="modal" (click)="navigateModal.dismiss()">Close</button>
             <button type="button" class="btn btn-primary" autofocus (click)="navigateModal.close()">Go</button>
         </modal-footer>
     </modal>
@@ -70,7 +70,7 @@
         </modal-header>
         <modal-body>
             <p><strong>Note:</strong> My <code>z-index</code> is set to <code>1049</code>.</p>
-            <button type="button" class="btn btn-secondary" (click)="modal.open()">Open another modal</button>
+            <button type="button" class="btn btn-light" (click)="modal.open()">Open another modal</button>
         </modal-body>
         <modal-footer>
             <button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="parentModal.dismiss()">Cancel</button>

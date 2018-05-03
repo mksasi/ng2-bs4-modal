@@ -1,6 +1,6 @@
 {
   "name": "ng2-bs4-modal",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "description": "Angular2 Boostrap4 Modal Component",
   "directories": {},
   "files": [
@@ -50,10 +50,10 @@
     "@angular/platform-browser-dynamic": "6.0.0-rc.6",
     "@angular/router": "6.0.0-rc.6",
     "@types/jasmine": "2.5.36",
-    "bootstrap": "4.0.0-alpha.6",
+    "bootstrap": "4.1.1",
     "core-js": "^2.5.5",
     "jasmine": "^2.4.1",
-    "jquery": "^2.2.1",
+    "jquery": "^3.3.1",
     "karma": "^0.13.21",
     "karma-chrome-launcher": "^0.2.2",
     "karma-jasmine": "^0.3.7",
@@ -61,11 +61,11 @@
     "karma-spec-reporter": "0.0.24",
     "lite-server": "^2.2.0",
     "phantomjs-prebuilt": "2.1.7",
+    "popper.js": "1.14.3",
     "reflect-metadata": "^0.1.8",
     "rimraf": "^2.5.1",
     "rxjs": "^6.0.0",
     "systemjs": "0.19.47",
-    "tether": "^1.3.2",
     "tslint": "^3.7.1",
     "typescript": "2.7.2",
     "uglify-js": "^2.6.2",
@@ -77,6 +77,6 @@
     "@angular/core": "^6.0.0-rc.6",
     "@angular/platform-browser": "^6.0.0-rc.6",
     "@angular/platform-browser-dynamic": "^6.0.0-rc.6",
-    "bootstrap": "^4.0.0-alpha.6"
+    "bootstrap": "^4"
   }
 }
