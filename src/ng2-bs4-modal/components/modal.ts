@@ -9,7 +9,7 @@ import { ModalInstance, ModalResult } from './modal-instance';
         'tabindex': '-1'
     },
     template: `
-        <div class="modal-dialog" [ngClass]="{ 'modal-sm': isSmall(), 'modal-lg': isLarge() }">
+        <div class="modal-dialog" role="document" [ngClass]="{ 'modal-sm': isSmall(), 'modal-lg': isLarge() }">
             <div class="modal-content">
                 <ng-content></ng-content>
             </div>
