@@ -1,11 +1,8 @@
 {
   "name": "@mksasi/ng2-bs4-modal",
-  "version": "9.0.2",
+  "version": "9.0.3",
   "description": "Angular2 Boostrap4 Modal Component",
   "directories": {},
-  "files": [
-    "lib"
-  ],
   "main": "./lib/ng2-bs4-modal/ng2-bs4-modal.module.js",
   "typings": "./lib/ng2-bs4-modal/ng2-bs4-modal.module.d.ts",
   "scripts": {
@@ -17,7 +14,6 @@
     "uglify": "uglifyjs ./bundles/ng2-bs4-modal.js --output ./bundles/ng2-bs4-modal.min.js",
     "bundles": "npm run tsc-single && npm run uglify",
     "build": "npm run clean && npm run lint && npm run tsc && npm run bundles",
-    "prepublish": "npm run ngc-build",
     "typings": "typings install -g",
     "test": "karma start --single-run",
     "test-watch": "karma start",
@@ -75,7 +71,8 @@
     "uglify-js": "^2.6.2",
     "zone.js": "0.10.3",
     "ng-packagr": "^9.1.5",
-    "protractor": "~7.0.0"
+    "protractor": "~7.0.0",
+    "@angular-devkit/build-angular": "~0.901.6"
   },
   "peerDependencies": {
     "@angular/common": "^9",

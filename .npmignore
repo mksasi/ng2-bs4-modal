@@ -1,16 +1,8 @@
 .idea
 .vscode
 
-node_modules
-npm-debug.log
-
-Thumbs.db
-Desktop.ini
+dist-app/
+node_modules/
 .DS_Store
-
-demo
-test
-index.html
-tsconfig.json
-tslint.json
-*.tgz
+src/
+e2e/

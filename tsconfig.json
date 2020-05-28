@@ -1,21 +1,12 @@
 {
     "compilerOptions": {
         "moduleResolution": "node",
-        "target": "es5",
-        "noImplicitAny": false,
+        "target": "es2015",
         "emitDecoratorMetadata": true,
         "experimentalDecorators": true,
         "inlineSourceMap": true,
         "declaration": false,
-        "outDir": ".",
-        "rootDir": "src/ng2-bs4-modal",
+        "outDir": "./dist/out-tsc",
         "lib": ["es2017", "dom"]
-    },
-    "exclude": [
-        "node_modules",
-        "demo",
-        "bundles",
-        "components",
-        "test"
-    ]
+    }
 }
