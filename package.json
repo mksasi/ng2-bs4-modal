@@ -1,6 +1,6 @@
 {
-  "name": "ng2-bs4-modal",
-  "version": "0.6.2",
+  "name": "@mksasi/ng2-bs4-modal",
+  "version": "9.0.2",
   "description": "Angular2 Boostrap4 Modal Component",
   "directories": {},
   "files": [
@@ -22,11 +22,15 @@
     "test": "karma start --single-run",
     "test-watch": "karma start",
     "lite": "lite-server",
-    "ngc-build": "ngc -p ./tsconfig-ngc.json"
+    "ngc-build": "ngc -p ./tsconfig-ngc.json",
+    "cleann": "rimraf dist",
+    "prebuild:lib": "npm run clean",
+    "build:lib": "ng-packagr -p ng-package.json",
+    "prepublishOnly": "npm run build:lib"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/maxfisher05/ng2-bs4-modal.git"
+    "url": "git+https://github.com/mksasi/ng2-bs4-modal.git"
   },
   "keywords": [
     "angular2",
@@ -41,17 +45,17 @@
   },
   "homepage": "https://github.com/dougludlow/ng2-bs3-modal#readme",
   "devDependencies": {
-    "@angular/common": "6.0.0",
-    "@angular/compiler": "6.0.0",
-    "@angular/compiler-cli": "6.0.0",
-    "@angular/core": "6.0.0",
-    "@angular/forms": "6.0.0",
-    "@angular/platform-browser": "6.0.0",
-    "@angular/platform-browser-dynamic": "6.0.0",
-    "@angular/router": "6.0.0",
-    "@types/jasmine": "2.5.36",
+    "@angular/common": "9.1.7",
+    "@angular/compiler": "9.1.7",
+    "@angular/compiler-cli": "9.1.7",
+    "@angular/core": "9.1.7",
+    "@angular/forms": "9.1.7",
+    "@angular/platform-browser": "9.1.7",
+    "@angular/platform-browser-dynamic": "9.1.7",
+    "@angular/router": "9.1.7",
+    "@types/jasmine": "3.5.10",
     "bootstrap": "4.1.1",
-    "core-js": "^2.5.5",
+    "core-js": "^3.6.5",
     "jasmine": "^2.4.1",
     "jquery": "^3.3.1",
     "karma": "^0.13.21",
@@ -63,20 +67,22 @@
     "phantomjs-prebuilt": "2.1.7",
     "popper.js": "1.14.3",
     "reflect-metadata": "^0.1.8",
-    "rimraf": "^2.5.1",
-    "rxjs": "^6.0.0",
-    "systemjs": "0.19.47",
-    "tslint": "^3.7.1",
-    "typescript": "2.7.2",
+    "rimraf": "^3.0.2",
+    "rxjs": "^6.5.5",
+    "systemjs": "6.3.2",
+    "tslint": "^5.10.0",
+    "typescript": "3.8.3",
     "uglify-js": "^2.6.2",
-    "zone.js": "0.8.26"
+    "zone.js": "0.10.3",
+    "ng-packagr": "^9.1.5",
+    "protractor": "~7.0.0"
   },
   "peerDependencies": {
-    "@angular/common": "^6",
-    "@angular/compiler": "^6",
-    "@angular/core": "^6",
-    "@angular/platform-browser": "^6",
-    "@angular/platform-browser-dynamic": "^6",
+    "@angular/common": "^9",
+    "@angular/compiler": "^9",
+    "@angular/core": "^9",
+    "@angular/platform-browser": "^9",
+    "@angular/platform-browser-dynamic": "^9",
     "bootstrap": "^4"
   }
 }

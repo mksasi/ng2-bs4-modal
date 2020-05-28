@@ -10,5 +10,5 @@ import { ModalComponent } from './modal';
     `
 })
 export class ModalBodyComponent {
-    constructor(private modal: ModalComponent) { }
+    constructor(public modal: ModalComponent) { }
 }

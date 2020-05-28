@@ -13,5 +13,5 @@ import { ModalComponent } from './modal';
 })
 export class ModalFooterComponent {
     @Input('show-default-buttons') showDefaultButtons: boolean = false;
-    constructor(private modal: ModalComponent) { }
+    constructor(public modal: ModalComponent) { }
 }
